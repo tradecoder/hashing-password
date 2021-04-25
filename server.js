@@ -6,7 +6,7 @@ const bcrypt =  require('bcrypt');
 
 const passwordInput = 'hellotestme';
 const wrongPasswordInput = 'gellotestme';
-const saltRounds = 8;
+const saltRounds = 12;
 
 // Convert plain password to hash
 const storedPasswordWithHash = bcrypt.hashSync(passwordInput, saltRounds);
