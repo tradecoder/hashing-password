@@ -2,7 +2,11 @@
 Hashing Password with 'bcrypt'
 
 
+
+
 ```javascript
+
+//const bcrypt  = require('bcrypt');
 
 const passwordInput = 'hellotestme';
 const wrongPasswordInput = 'gellotestme';
