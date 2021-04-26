@@ -37,3 +37,8 @@ bcrypt.hash(storedPasswordWithHash, saltRounds, (err, hash) => {
 });
 
 ```
+
+## Linked Project and project code
+Linked project code is not storing or comparing any data. It's just generating and displaying hash
+
+[https://hashing-password.glitch.me](https://hashing-password.glitch.me)
