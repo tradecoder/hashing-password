@@ -42,7 +42,7 @@ form button {
   font-size: inherit;
   line-height: 1.4em;
   padding: 0.25em 1em;
-  max-width: 25ch;
+  max-width: 20ch;
 }
 
 form button:hover {
