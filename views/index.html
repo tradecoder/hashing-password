@@ -1,0 +1,57 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Hashing Password" />
+
+    <title>Hashing Password by TradeCoder</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Hashing Password</h1>
+    </header>
+
+    <main>
+      <h2>Hashing with bcrypt</h2>
+
+      <p>This project includes hashing password system using 'bcrypt':</p>
+
+      <form id="form1">
+        <label>
+          Input your password
+          <input
+            name="pwd"
+            type="password"
+            maxlength="16"
+            required
+            placeholder="Type your password here"
+          />
+        </label>
+        <button type="submit" id="submit-password">Show hash password</button>
+      </form>
+
+      <section>
+        <p id="input-password"></p>
+        <p id="display-hash"></p>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <p>
+          <a href="https://github.com/tradecoder">Mamun @ TradeCoder</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
