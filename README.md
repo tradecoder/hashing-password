@@ -33,7 +33,7 @@ bcrypt.hash(storedPasswordWithHash, saltRounds, (err, hash) => {
 });
 ```
 
-## Implementation for login
+## Login code
 
 ```javascript 
 router.route("/login/:username/:password")
