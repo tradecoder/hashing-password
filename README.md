@@ -33,6 +33,28 @@ bcrypt.hash(storedPasswordWithHash, saltRounds, (err, hash) => {
 });
 ```
 
+## Implementation for login
+
+```javascript 
+router.route("/login/:username/:password")
+.post((req, res)=>{
+    const {username, password} = req.params;
+    
+    Users.findOne({username})
+    .then(user=>{
+     bcrypt.compare(password, user.password, (err, data)=>{        
+           if(data){              
+           res.send({userid:user._id, username:user.username, firstName:user.firstName});
+           } else{
+               res.send({error:'password or username not matched!'});
+           }
+       })
+    }) 
+  
+    .catch(err=>res.send(err))
+})
+```
+
 ## Linked Project and project code
 
 Linked project code is not storing or comparing any data. It's just generating and displaying hash
